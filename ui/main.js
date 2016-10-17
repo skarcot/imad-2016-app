@@ -7,9 +7,9 @@ button.onclick = function() {
 //capture the resp & store it in a var
 
 //render the var in the correct span
-var span = document.getElementById('count');
 counter++;
-span.innerHtml = counter.toString();
+var span = document.getElementById('count');
+span.innerHTML = counter.toString();
 };
 
 /*
