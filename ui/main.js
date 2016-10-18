@@ -11,7 +11,7 @@ button.onclick = function() {
         // check whether req's ready state is DONE(it cud be - unsent, opened, headers-received, loading, done)
         if(reqCounter.readyState == XMLHttpRequest.DONE) {
             // check whether response code is OK(200)
-            if(reqCounter.state == 200) {
+            if(reqCounter.status == 200) {
                 var counter = reqCounter.responseText;
                 //render the var in the correct span
                 var span = document.getElementById('count');
