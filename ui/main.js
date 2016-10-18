@@ -23,7 +23,7 @@ button.onclick = function() {
     
     // make the req to the counter endpoint
     reqCounter.open('GET', 'http://skarcot.imad.hasura-app.io/counter', true);
-    reqCounter.send();
+    reqCounter.send(null);
 };
 
 /*
