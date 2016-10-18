@@ -3,7 +3,7 @@ var button = document.getElementById('counter');
 
 button.onclick = function() {
     // create a req object
-    reqCounter = XMLHttpRequest();
+    reqCounter = new XMLHttpRequest();
     
     // capture the resp & store it in a var
     // check whether the req's on ready state has changed?
