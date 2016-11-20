@@ -26,6 +26,25 @@ button.onclick = function() {
     reqCounter.send(null);
 };
 
+// submit name:
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+
+submit.onclick = function () {
+    // make a req to server & send the name
+    
+    // capture a list of names & render it as a list
+    var names = [{]'name1', 'name2', 'name3'];
+    var list = '';
+    for (var i=0; i < names.length, i++)
+    {
+        list += '<li>' + names[i] + '</li>';
+    }
+    var nameList = document.getElementById('namelist');
+    nameList.innerHtml = list;
+}
+
 /*
 console.log('Loaded!');
 
